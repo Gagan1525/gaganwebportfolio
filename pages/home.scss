@@ -10,18 +10,7 @@
         &__content-holder {
             width: 100%; 
             padding: 2em 0;     
-            animation: test 1s infinite;
             
-            @keyframes test {
-                from {
-                    background-color: blue;
-                }
-
-                to {
-                    background-color: red;
-                }
-            }
-    
             .hero-title {
                 padding: 0 0 .5em;
                 

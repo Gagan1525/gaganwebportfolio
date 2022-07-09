@@ -229,24 +229,6 @@ object {
 .container-main .con-hero__content-holder {
   width: 100%;
   padding: 2em 0;
-  -webkit-animation: test 1s infinite;
-          animation: test 1s infinite;
-}
-@-webkit-keyframes test {
-  from {
-    background-color: blue;
-  }
-  to {
-    background-color: red;
-  }
-}
-@keyframes test {
-  from {
-    background-color: blue;
-  }
-  to {
-    background-color: red;
-  }
 }
 .container-main .con-hero__content-holder .hero-title {
   padding: 0 0 0.5em;
