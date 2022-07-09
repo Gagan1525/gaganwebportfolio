@@ -234,18 +234,18 @@ object {
 }
 @-webkit-keyframes test {
   from {
-    background-color: white;
+    background-color: blue;
   }
   to {
-    background-color: grey;
+    background-color: red;
   }
 }
 @keyframes test {
   from {
-    background-color: white;
+    background-color: blue;
   }
   to {
-    background-color: grey;
+    background-color: red;
   }
 }
 .container-main .con-hero__content-holder .hero-title {
