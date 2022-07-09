@@ -1,0 +1,261 @@
+.container-main {
+    padding: 2em 2em 0 2em;
+
+    .con-hero {
+        align-items: center;
+        padding: 8em 2em;
+        border-radius: $box-rad-primary;
+        box-shadow: 0 0 6rem rgba(0, 0, 0, .3);      
+        
+        &__content-holder {
+            width: 100%; 
+            padding: 2em 0;     
+            animation: test 1s infinite;
+            
+            @keyframes test {
+                from {
+                    background-color: white;
+                }
+
+                to {
+                    background-color: grey;
+                }
+            }
+    
+            .hero-title {
+                padding: 0 0 .5em;
+                
+            }
+        }
+    }
+
+    .con-ach-wrapper {
+        border-radius: $box-rad-primary;
+        border-top: 2px solid $line-clr-primary;
+        border-bottom: 2px solid $line-clr-primary;
+        padding: 2em;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .con-ach-item {
+            padding: 3em 2em;
+            margin: 1em;
+            flex: 1 1 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__icon {
+                width: 5em;
+            }
+
+            &__title {
+                padding: 1em 0;
+            }
+            
+        }
+    }
+
+    .projects-con-wrapper {
+        
+        .projects-con__projects {
+            position: relative;
+
+            &__project {
+                margin-top: 4rem;
+
+                
+
+                .project-image-con {
+                    display: flex;
+                    justify-content: center;
+
+                    .project-img {
+                        border-radius: $box-rad-primary;
+                        box-shadow: 0 0 6rem rgba(0, 0, 0, .3);
+                    }
+                }
+
+                .project-desc-con {
+                    padding: 4em 1em;
+                    margin: 0 auto;
+                    
+                    z-index: 1;
+
+                    .project__name {
+                        border-bottom: 2px solid $line-clr-primary;
+                        margin-bottom: .5em;
+                        position: relative;
+                    }
+
+                    .project__desc {
+                        line-height: 3rem;
+                    }
+                    .project__btn {
+                        margin: 1em auto;
+                        padding: .5em .5em;
+                        font-family: 'Rubik', sans-serif;
+                        font-weight: 500;
+                        font-size: 2rem;
+                        color: rgba(255, 255, 255, 1);
+                        background-image: linear-gradient(to right, $grad-primary, $grad-secondary);
+                        outline: none;
+                        border: none;
+                        border-radius: $box-rad-primary;
+                        display: block;
+                    }
+
+                    
+                }
+            }
+            .ver-line {
+                display: none;
+            }
+        }        
+    }
+    
+    .footer {
+        background-image: linear-gradient(to right, $grad-primary, $grad-secondary);
+        border-top-left-radius: $box-rad-primary;
+        border-top-right-radius: $box-rad-primary;
+
+        &-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            &>* {
+                display: flex;   
+                justify-content: center;       
+            }
+
+            .footer-title {
+                width: 100%;
+                padding: 2em .5em;
+                color: $text-clr-white;
+            }
+            .footer-image-wrapper {
+                display: flex;
+                align-items: center;
+                
+                .footer-image {
+                    border-radius: 50%;
+                    height: 12rem;
+                    box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
+
+                }
+            }
+
+            .footer-social-linklist {
+                list-style: none;  
+                display: flex;
+                justify-content: center;
+                margin: 2em 0 0 0 ;
+
+                .footer-social-link {
+                    text-align: center;
+                    margin: 2em;
+                    
+                    .footer-social-link-icon {
+                        width: 3em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container-main {
+        padding: 8em 8em 0 8em;
+
+        .con-hero {
+            padding: 10em 7em;
+            background-image: linear-gradient(90deg, rgb(255, 255, 255) 40%, rgba(255,255,255,0) 70%),
+            url(../GRAPHICS/IMAGES/hero_bg_image.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 100%;
+
+            &__content-holder {
+                padding: 4em 0 8em;
+                width: 50%;
+
+                .hero-title {
+                    padding: 0 0 1em;
+                }
+            }
+        }
+
+        .projects-con-wrapper {
+            .projects-con__projects {
+                margin-top: 8em;
+
+                &__project {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 15em;
+
+                    .project-image-con {
+                        width: 50%;
+                        padding: 0 4em;
+                    }
+
+                    .project-desc-con {
+                        width: 50%;
+                        padding: 4em 6em;
+
+                        .project__name {
+                            margin-bottom: 1em;
+                        }
+
+                        .project__desc {
+                            margin-bottom: 2em;
+                            line-height: 3rem;
+                        }
+                    }
+                }
+
+                .ver-line {
+                    display: inline;
+                    position: absolute;
+                    width: 3px;
+                    height: 100%;
+                    background-color: $line-clr-primary;
+                    top: 0;
+                    left: 50%;
+                    border-radius: $box-rad-primary;
+                }
+            }
+        }
+
+        .footer {
+            &-row {
+                flex-wrap: nowrap;
+
+                .footer-title{
+                    width: 50%;
+                }
+
+                .footer-image-wrapper {
+                    width: 50%;
+                }
+
+                
+            }
+
+
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container-main {
+
+        .con-hero {
+            background-image: linear-gradient(90deg, rgb(255, 255, 255) 50%, rgba(255,255,255,0) 70%),
+            url(../GRAPHICS/IMAGES/hero_bg_image.jpg);
+        }
+    }
+}

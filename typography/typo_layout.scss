@@ -1,0 +1,96 @@
+.container-main {
+    .con-hero {
+        &__content-holder {
+            .hero-title {
+                font-family: marlin-med;
+                font-size: 5rem;       
+                letter-spacing: 1px; 
+            }
+    
+            .hero-para-wrapper {
+                .hero-para {
+                    font-family: marlin-reg;
+                    font-size: 2rem;
+                    color: $text-clr-secondary;
+                    line-height: 1.5;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+    
+    .con-ach-wrapper {
+        .con-ach-item {
+            text-align: center;
+            
+            &__title {
+                font-family: 'Rubik', sans-serif;
+                font-weight: 500;
+                font-size: 2.5rem;
+            }
+
+            &__para {
+                font-family: 'Rubik', sans-serif;
+                font-weight: 300;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .projects-con-wrapper {
+        .projects-con__title {
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+            font-size: 2.5rem;
+        }
+        
+        .project-desc-con {
+            .project__date {
+                font-family: 'Rubik', sans-serif;
+                font-weight: 300;
+                font-style: italic;
+                font-size: 1.5rem;
+                margin-bottom: 5px;
+            }    
+    
+            .project__name {
+                font-family: 'Rubik', sans-serif;
+                font-weight: 400;
+                font-size: 2.5rem;
+                
+            }
+    
+            .project__desc {
+                font-family: 'Rubik', sans-serif;
+                font-weight: 300;
+                font-size: 2rem;
+            }
+        }        
+    }
+
+    .footer {
+        &-row {
+            .footer-title {
+                font-family: marlin-med;
+                font-size: 3.5rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .con-hero {
+        &__content-holder {
+            .hero-title {
+                font-size: 6rem;
+            }
+
+            .hero-para-wrapper {                
+                .hero-para {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}

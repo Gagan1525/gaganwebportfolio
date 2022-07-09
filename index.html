@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gagandeep Singh Portfolio</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-main">
+
+        <!-- 
+            Hero Section with test
+        -->
+        <div class="con-hero section d-flex">
+            <div class="con-hero-gradient-holder"></div>
+            <div class="con-hero__content-holder">
+                <h1 class="hero-title">
+                    <span class="hero-title-primary">
+                        Hi! 
+                        <span class="hero-title-secondary gradient-text">
+                            Gagandeep Singh
+                        </span>
+                        here
+                    </span>                
+                </h1>
+    
+                <div class="hero-para-wrapper">
+                    <p class="hero-para">
+                        A <span style="color: #000; font-family: marlin-sbold">Student</span> of Thompson Rivers University.<br>
+                        I am specialized in Computing Science.<br> 
+                        Front End design, Web and Software development are my concerns. 
+                    </p>
+                </div>            
+            </div>
+        </div>
+
+        <!-- 
+            Achievements Section 
+        -->
+        <div class="con-ach-wrapper section d-flex">
+            <div class="con-ach-item">
+                <div class="con-ach-item__icon">
+                    <object class="ach-item-img" data="graphics/ICONS/education.svg" type=""></object>
+                </div>
+                <h1 class="con-ach-item__title">
+                    Study
+                </h1>
+                <p class="con-ach-item__para">
+                    Bachelor of Computing Science
+                </p>
+            </div>
+
+            <div class="con-ach-item">
+                <div class="con-ach-item__icon">
+                    <object class="ach-item-img" data="graphics/ICONS/achievement.svg" type=""></object>
+
+                </div>
+                <h1 class="con-ach-item__title">
+                    University Dean's List
+                </h1>
+                <p class="con-ach-item__para">
+                    Fall 2021<br>Winter 2022
+                </p>
+            </div>
+
+            <div class="con-ach-item">
+                <div class="con-ach-item__icon">
+                    <object class="ach-item-img" data="graphics/ICONS/success.svg" type=""></object>
+
+                </div>
+                <h1 class="con-ach-item__title">
+                    National Achievement
+                </h1>
+                <p class="con-ach-item__para">
+                    Limca Book Records holder
+                </p>
+            </div>
+
+            <div class="con-ach-item">
+                <div class="con-ach-item__icon d-flex">
+                    <object class="ach-item-img" data="graphics/ICONS/website-content.svg" type=""></object>
+                </div>
+                <h1 class="con-ach-item__title">
+                    Web
+                </h1>
+                <p class="con-ach-item__para">
+                    Front End/UI Design
+                </p>
+            </div>
+        </div>
+
+
+        <!-- 
+            Projects Section 
+        -->
+        <div class="projects-con-wrapper section">
+            <div class="projects-con__title">
+                <h1 class="gradient-text">Recent Works</h1>
+            </div>
+
+            <div class="projects-con__projects">
+                <div class="projects-con__projects__project">
+                    
+                    <div class="project-image-con">
+                        <img class="project-img" src="GRAPHICS/IMAGES/weatherapp_bg.png" alt="">
+                    </div>
+
+                    <div class="project-desc-con">
+                        <span class="gradient-blob"></span>
+
+
+                        <h4 class="project__date">
+                            Jan 2022
+                        </h4>
+                        <h1 class="project__name">
+                            Weather Website
+                        </h1>
+                        <p class="project__desc">
+                            Personal project created using HTML/CSS to create layout. Capability of 
+                            searching fetching different cities' results and displaying on the homepage.
+                            Data is fetched from Tomorrow weather API and is displayed using JavaScript
+                            with the concepts of promises and objects. Currently hosted on Netlify.
+                        </p>
+
+                        <button class="project__btn" id="projectbtn__weatherdeck">Try It!</button>
+                    </div>
+                </div>
+
+                <div class="projects-con__projects__project reverse">
+                    <div class="project-image-con">
+                        <img class="project-img" src="GRAPHICS/IMAGES/dietweb_bg.png" alt="">
+                    </div>
+
+                    <div class="project-desc-con">
+                        
+                        <h4 class="project__date rtl">
+                            <span class="gradient-blob"></span>
+                            Dec 2021
+                        </h4>
+                        <h1 class="project__name rtl">
+                            Diet/Workout generator
+                        </h1>
+                        <p class="project__desc rtl">
+                            Created as a college course project. Used to create suitable Diet/Workout 
+                            plan based on information provided to the user. More focus of this project is 
+                            on front-end part. At the back-end, concepts of JavaScript arrays is used to generate
+                            information and is displayed with HTML/CSS.
+                        </p>
+                        <button class="project__btn" id="projectbtn__dietworkoutgen">Try It!</button>
+                    </div>
+                </div>
+
+                <div class="projects-con__projects__project">
+                    <div class="project-image-con">
+                        <img class="project-img" src="GRAPHICS/IMAGES/musicweb_bg.png" alt="">
+                    </div>
+
+                    <div class="project-desc-con">
+                        <h4 class="project__date">
+                            <span class="gradient-blob"></span>
+                            Apr 2021
+                        </h4>
+                        <h1 class="project__name">
+                            Music Website
+                        </h1>
+                        <p class="project__desc">
+                            Created as a college course project. Used to create suitable Diet/Workout 
+                            plan based on information provided to the user. More focus of this project is 
+                            on front-end part. At the back-end, concepts of JavaScript arrays is used to generate
+                            information and is displayed with HTML/CSS.
+                        </p>
+                        <button class="project__btn">Try It!</button>
+                    </div>
+                </div>
+                <div class="ver-line"></div>
+            </div>            
+        </div>
+
+        <footer class="footer section">
+            <div class="footer-row">
+                <h1 class="footer-title">
+                    Connect with me
+                </h1>
+                <div class="footer-image-wrapper">
+                    <img class="footer-image" src="GRAPHICS/IMAGES/footer_img.png" alt="">
+                </div>
+            </div>
+            <div class="footer-row">
+                <ul class="footer-social-linklist">
+                    <li class="footer-social-link" id="social-facebook-icon">
+                        <object class="footer-social-link-icon" id="social-facebook-icon" data="GRAPHICS/ICONS/facebook.svg" alt=""></object>
+                    </li>
+                    <li class="footer-social-link" id="social-gmail-icon">
+                        <object class="footer-social-link-icon" id="social-gmail-icon" data="GRAPHICS/ICONS/gmail.svg" alt=""></object>
+                    </li>
+                    <li class="footer-social-link" id="social-instagram-icon">
+                        <object class="footer-social-link-icon" id="social-instagram-icon" data="GRAPHICS/ICONS/instagram.svg"  alt=""></object>
+                    </li>
+                    <li class="footer-social-link" id="social-linkedin-icon">
+                            <object class="footer-social-link-icon"  data="GRAPHICS/ICONS/linkedin.svg" alt=""></object>
+
+                    </li>
+                </ul>
+            </div>
+            
+        </footer>
+    </div>  
+
+    <script src="script.js"></script>
+</body>
+</html>
